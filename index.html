@@ -5,17 +5,11 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="theme-color" content="#087f5b">
-
 <meta name="description" content="AfyaNexa promotes health, prevents diseases and builds healthier communities through practical health information and sports science.">
 
 <title>AfyaNexa | Promoting Health, Preventing Diseases</title>
 
 <style>
-
-/* =================================
-   1. GENERAL WEBSITE STYLING
-================================= */
-
 * {
     margin: 0;
     padding: 0;
@@ -76,12 +70,10 @@ section {
     color: var(--grey);
 }
 
-/* =================================
-   2. HEADER AND NAVIGATION
-================================= */
+/* HEADER */
 
 header {
-    background: var(--white);
+    background: white;
     padding: 15px 0;
     position: sticky;
     top: 0;
@@ -132,24 +124,17 @@ header {
     border-radius: 20px;
 }
 
-/* =================================
-   3. HERO SECTION
-================================= */
+/* HERO */
 
 .hero {
-    background: linear-gradient(
-        120deg,
-        #064d39,
-        #087f5b,
-        #14966c
-    );
+    background: linear-gradient(120deg,#064d39,#087f5b,#14966c);
     color: white;
-    padding: 90px 0;
+    padding: 80px 0;
     text-align: center;
 }
 
 .hero h1 {
-    font-size: clamp(32px, 6vw, 52px);
+    font-size: clamp(32px,6vw,52px);
     margin-bottom: 15px;
 }
 
@@ -157,10 +142,28 @@ header {
     color: var(--gold);
 }
 
+.hero h2 {
+    margin-bottom: 12px;
+}
+
 .hero p {
     max-width: 750px;
     margin: 15px auto;
     font-size: 17px;
+}
+
+/* PROJECT IMAGE */
+
+.project-image {
+    width: 100%;
+    max-width: 650px;
+    height: auto;
+    display: block;
+    margin: 25px auto;
+    border-radius: 15px;
+    border: 4px solid white;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.25);
+    object-fit: contain;
 }
 
 .hero-buttons {
@@ -176,7 +179,6 @@ header {
     padding: 12px 23px;
     border-radius: 7px;
     font-weight: bold;
-    border: none;
 }
 
 .btn-primary {
@@ -189,9 +191,7 @@ header {
     color: var(--green);
 }
 
-/* =================================
-   4. INTRODUCTION
-================================= */
+/* INTRODUCTION */
 
 .intro {
     background: white;
@@ -209,13 +209,11 @@ header {
     font-size: 28px;
 }
 
-/* =================================
-   5. STATISTICS
-================================= */
+/* STATISTICS */
 
 .stats-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    grid-template-columns: repeat(auto-fit,minmax(180px,1fr));
     gap: 18px;
 }
 
@@ -232,9 +230,7 @@ header {
     font-size: 30px;
 }
 
-/* =================================
-   6. HEALTH TOPICS
-================================= */
+/* HEALTH TOPICS */
 
 .topics-section {
     background: var(--background);
@@ -254,7 +250,7 @@ header {
 
 .topic-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    grid-template-columns: repeat(auto-fit,minmax(240px,1fr));
     gap: 20px;
 }
 
@@ -297,10 +293,6 @@ header {
     margin-top: 15px;
 }
 
-/* =================================
-   7. TOPIC DETAILS
-================================= */
-
 .details {
     display: none;
     background: white;
@@ -328,9 +320,7 @@ header {
     margin-top: 20px;
 }
 
-/* =================================
-   8. FIRST AID SECTION
-================================= */
+/* FIRST AID */
 
 .first-aid {
     background: #fff5ed;
@@ -357,13 +347,11 @@ header {
     border-radius: 5px;
 }
 
-/* =================================
-   9. HEALTH TIPS
-================================= */
+/* HEALTH TIPS */
 
-.tips-grid {
+.tips-grid,.campaign-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    grid-template-columns: repeat(auto-fit,minmax(220px,1fr));
     gap: 20px;
 }
 
@@ -379,18 +367,10 @@ header {
     margin-bottom: 10px;
 }
 
-/* =================================
-   10. CAMPAIGNS
-================================= */
+/* CAMPAIGNS */
 
 .campaigns {
     background: var(--light-green);
-}
-
-.campaign-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
-    gap: 20px;
 }
 
 .campaign-card {
@@ -399,9 +379,7 @@ header {
     border-radius: 10px;
 }
 
-/* =================================
-   11. ABOUT SECTION
-================================= */
+/* ABOUT */
 
 .about {
     background: white;
@@ -417,9 +395,7 @@ header {
     margin-top: 20px;
 }
 
-/* =================================
-   12. DEVELOPERS SECTION
-================================= */
+/* DEVELOPERS */
 
 .developers {
     background: var(--background);
@@ -427,7 +403,7 @@ header {
 
 .developer-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+    grid-template-columns: repeat(auto-fit,minmax(210px,1fr));
     gap: 20px;
 }
 
@@ -455,9 +431,7 @@ header {
     color: var(--dark-green);
 }
 
-/* =================================
-   13. CONTACT SECTION
-================================= */
+/* CONTACT */
 
 .contact {
     background: white;
@@ -472,9 +446,7 @@ header {
     border-radius: 12px;
 }
 
-/* =================================
-   14. DISCLAIMER
-================================= */
+/* DISCLAIMER */
 
 .disclaimer {
     background: #fff7df;
@@ -484,9 +456,7 @@ header {
     border-radius: 6px;
 }
 
-/* =================================
-   15. FOOTER
-================================= */
+/* FOOTER */
 
 footer {
     background: var(--dark-green);
@@ -503,12 +473,9 @@ footer a {
     color: var(--gold);
 }
 
-/* =================================
-   16. RESPONSIVE DESIGN
-================================= */
+/* RESPONSIVE DESIGN */
 
-@media(max-width: 750px) {
-
+@media(max-width:750px) {
     .navbar {
         justify-content: center;
     }
@@ -522,7 +489,7 @@ footer a {
     }
 
     .hero {
-        padding: 65px 15px;
+        padding: 55px 15px;
     }
 
     section {
@@ -537,15 +504,12 @@ footer a {
         padding: 20px;
     }
 }
-
 </style>
 </head>
 
 <body>
 
-<!-- =================================
-     HEADER
-================================= -->
+<!-- HEADER -->
 
 <header>
 <div class="container navbar">
@@ -571,9 +535,7 @@ Kiswahili
 </div>
 </header>
 
-<!-- =================================
-     HERO
-================================= -->
+<!-- HERO SECTION -->
 
 <section class="hero" id="home">
 
@@ -584,6 +546,14 @@ Welcome to <span>AfyaNexa</span>
 </h1>
 
 <h2>Promoting Health, Preventing Diseases</h2>
+
+<!-- AFYANEXA PROJECT IMAGE -->
+
+<img
+src="IMG_37214c3f-606b-4583-9c3f-80d7f21582e0.jpg"
+alt="AfyaNexa Health Promotion Project"
+class="project-image"
+>
 
 <p>
 Your trusted digital health promotion resource.
@@ -609,9 +579,7 @@ Discover AfyaNexa
 </div>
 </section>
 
-<!-- =================================
-     INTRODUCTION
-================================= -->
+<!-- INTRODUCTION -->
 
 <section class="intro">
 
@@ -632,15 +600,11 @@ and stronger communities.
 </p>
 
 </div>
-
 </section>
 
-<!-- =================================
-     PROJECT OVERVIEW
-================================= -->
+<!-- PROJECT OVERVIEW -->
 
 <section>
-
 <div class="container">
 
 <div class="section-heading">
@@ -674,9 +638,7 @@ and stronger communities.
 </div>
 </section>
 
-<!-- =================================
-     HEALTH TOPICS
-================================= -->
+<!-- HEALTH TOPICS -->
 
 <section class="topics-section" id="topics">
 
@@ -700,16 +662,12 @@ onkeyup="searchTopics()"
 
 <div class="topic-grid" id="topicGrid">
 
-<!-- TOPIC 1 -->
-
 <div class="topic-card">
 <div class="topic-icon">🌿</div>
 <h3>1. General Health Promotion and Healthy Living</h3>
 <p>Discover healthy habits, personal hygiene and everyday disease prevention.</p>
 <button class="read-btn" onclick="showTopic(1)">Read More</button>
 </div>
-
-<!-- TOPIC 2 -->
 
 <div class="topic-card">
 <div class="topic-icon">🏥</div>
@@ -718,16 +676,12 @@ onkeyup="searchTopics()"
 <button class="read-btn" onclick="showTopic(2)">Read More</button>
 </div>
 
-<!-- TOPIC 3 -->
-
 <div class="topic-card">
 <div class="topic-icon">🤱</div>
 <h3>3. Maternal, Newborn and Child Health</h3>
 <p>Promote safe pregnancy, newborn care, breastfeeding and child health.</p>
 <button class="read-btn" onclick="showTopic(3)">Read More</button>
 </div>
-
-<!-- TOPIC 4 -->
 
 <div class="topic-card">
 <div class="topic-icon">💉</div>
@@ -736,16 +690,12 @@ onkeyup="searchTopics()"
 <button class="read-btn" onclick="showTopic(4)">Read More</button>
 </div>
 
-<!-- TOPIC 5 -->
-
 <div class="topic-card">
 <div class="topic-icon">🦠</div>
 <h3>5. Communicable Diseases</h3>
 <p>Learn about malaria, HIV, tuberculosis and infection prevention.</p>
 <button class="read-btn" onclick="showTopic(5)">Read More</button>
 </div>
-
-<!-- TOPIC 6 -->
 
 <div class="topic-card">
 <div class="topic-icon">❤️</div>
@@ -754,16 +704,12 @@ onkeyup="searchTopics()"
 <button class="read-btn" onclick="showTopic(6)">Read More</button>
 </div>
 
-<!-- TOPIC 7 -->
-
 <div class="topic-card">
 <div class="topic-icon">🥗</div>
 <h3>7. Nutrition and Healthy Eating</h3>
 <p>Learn about balanced diets, food safety and healthy Kenyan foods.</p>
 <button class="read-btn" onclick="showTopic(7)">Read More</button>
 </div>
-
-<!-- TOPIC 8 -->
 
 <div class="topic-card">
 <div class="topic-icon">🌍</div>
@@ -772,16 +718,12 @@ onkeyup="searchTopics()"
 <button class="read-btn" onclick="showTopic(8)">Read More</button>
 </div>
 
-<!-- TOPIC 9 -->
-
 <div class="topic-card">
 <div class="topic-icon">🧠</div>
 <h3>9. Mental Health and Psychosocial Wellbeing</h3>
 <p>Promote emotional wellbeing, stress management and mental health awareness.</p>
 <button class="read-btn" onclick="showTopic(9)">Read More</button>
 </div>
-
-<!-- TOPIC 10 -->
 
 <div class="topic-card">
 <div class="topic-icon">🤝</div>
@@ -790,16 +732,12 @@ onkeyup="searchTopics()"
 <button class="read-btn" onclick="showTopic(10)">Read More</button>
 </div>
 
-<!-- TOPIC 11 -->
-
 <div class="topic-card">
 <div class="topic-icon">🎓</div>
 <h3>11. Adolescent and School Health</h3>
 <p>Promote healthy development, hygiene and wellbeing among young people.</p>
 <button class="read-btn" onclick="showTopic(11)">Read More</button>
 </div>
-
-<!-- TOPIC 12 -->
 
 <div class="topic-card">
 <div class="topic-icon">👨‍👩‍👧‍👦</div>
@@ -808,16 +746,12 @@ onkeyup="searchTopics()"
 <button class="read-btn" onclick="showTopic(12)">Read More</button>
 </div>
 
-<!-- TOPIC 13 -->
-
 <div class="topic-card">
 <div class="topic-icon">📢</div>
 <h3>13. Health Education and Communication</h3>
 <p>Improve health literacy, awareness campaigns and responsible communication.</p>
 <button class="read-btn" onclick="showTopic(13)">Read More</button>
 </div>
-
-<!-- TOPIC 14 -->
 
 <div class="topic-card">
 <div class="topic-icon">📊</div>
@@ -826,16 +760,12 @@ onkeyup="searchTopics()"
 <button class="read-btn" onclick="showTopic(14)">Read More</button>
 </div>
 
-<!-- TOPIC 15 -->
-
 <div class="topic-card">
 <div class="topic-icon">🦺</div>
 <h3>15. Occupational Health and Safety</h3>
 <p>Learn workplace safety, hazard prevention and healthy working environments.</p>
 <button class="read-btn" onclick="showTopic(15)">Read More</button>
 </div>
-
-<!-- TOPIC 16 -->
 
 <div class="topic-card">
 <div class="topic-icon">⚽</div>
@@ -844,16 +774,12 @@ onkeyup="searchTopics()"
 <button class="read-btn" onclick="showTopic(16)">Read More</button>
 </div>
 
-<!-- TOPIC 17 -->
-
 <div class="topic-card">
 <div class="topic-icon">🏃</div>
 <h3>17. Physical Activity, Exercise and Fitness</h3>
 <p>Promote active living, fitness, strength and disease prevention.</p>
 <button class="read-btn" onclick="showTopic(17)">Read More</button>
 </div>
-
-<!-- TOPIC 18 -->
 
 <div class="topic-card">
 <div class="topic-icon">🚑</div>
@@ -862,16 +788,12 @@ onkeyup="searchTopics()"
 <button class="read-btn" onclick="showTopic(18)">Read More</button>
 </div>
 
-<!-- TOPIC 19 -->
-
 <div class="topic-card">
 <div class="topic-icon">🏛️</div>
 <h3>19. Health Systems and Healthcare Services</h3>
 <p>Explore Kenya's healthcare structure, health rights and access to services.</p>
 <button class="read-btn" onclick="showTopic(19)">Read More</button>
 </div>
-
-<!-- TOPIC 20 -->
 
 <div class="topic-card">
 <div class="topic-icon">🔬</div>
@@ -882,12 +804,9 @@ onkeyup="searchTopics()"
 
 </div>
 
-<!-- TOPIC DETAILS APPEAR HERE -->
-
 <div class="details" id="topicDetails">
 
 <h2 id="detailTitle"></h2>
-
 <div id="detailContent"></div>
 
 <button class="close-btn" onclick="closeTopic()">
@@ -895,13 +814,10 @@ Close Topic
 </button>
 
 </div>
-
 </div>
 </section>
 
-<!-- =================================
-     FIRST AID SECTION
-================================= -->
+<!-- FIRST AID -->
 
 <section class="first-aid" id="firstaid">
 
@@ -915,7 +831,6 @@ Close Topic
 <div class="first-aid-content">
 
 <h3>1. Emergency Response</h3>
-
 <p>
 Check that the environment is safe before approaching
 an injured person. Call for emergency assistance.
@@ -924,7 +839,6 @@ services where available.
 </p>
 
 <h3>2. Severe Bleeding</h3>
-
 <p>
 Apply firm, continuous direct pressure to the wound
 using clean cloth or gauze. Seek urgent medical help.
@@ -932,7 +846,6 @@ Do not remove deeply embedded objects.
 </p>
 
 <h3>3. Burns and Scalds</h3>
-
 <p>
 Cool the burn under cool running water for 20 minutes.
 Remove jewellery and loose clothing near the burn,
@@ -942,7 +855,6 @@ Do not apply ice, toothpaste or butter.
 </p>
 
 <h3>4. Choking</h3>
-
 <p>
 If an adult or child over one year cannot speak,
 breathe or cough effectively, call for emergency help.
@@ -954,7 +866,6 @@ Seek trained emergency assistance.
 </p>
 
 <h3>5. Seizures</h3>
-
 <p>
 Protect the person from nearby objects, cushion
 their head and time the seizure. Do not restrain them
@@ -965,7 +876,6 @@ difficulty breathing or is injured.
 </p>
 
 <h3>6. Suspected Fractures</h3>
-
 <p>
 Keep the injured area still and supported.
 Do not attempt to straighten the bone.
@@ -973,7 +883,6 @@ Seek professional medical assessment.
 </p>
 
 <h3>7. CPR Awareness</h3>
-
 <p>
 If someone is unresponsive and not breathing normally,
 call emergency services, obtain an AED if available
@@ -983,7 +892,6 @@ available and follow its voice instructions.
 </p>
 
 <h3>8. Heatstroke</h3>
-
 <p>
 Heatstroke is a medical emergency. Warning signs
 include confusion, collapse and very high body
@@ -994,25 +902,20 @@ methods while awaiting assistance.
 </p>
 
 <div class="emergency">
-
 <strong>IMPORTANT EMERGENCY NOTICE</strong>
-
 <p>
 First aid information on AfyaNexa is educational.
 It does not replace practical first aid training,
 professional assessment or emergency medical care.
 Do not delay emergency assistance.
 </p>
-
 </div>
 
 </div>
 </div>
 </section>
 
-<!-- =================================
-     HEALTH TIPS
-================================= -->
+<!-- HEALTH TIPS -->
 
 <section id="tips">
 
@@ -1059,9 +962,7 @@ Do not delay emergency assistance.
 </div>
 </section>
 
-<!-- =================================
-     HEALTH CAMPAIGNS
-================================= -->
+<!-- HEALTH CAMPAIGNS -->
 
 <section class="campaigns">
 
@@ -1076,35 +977,41 @@ Do not delay emergency assistance.
 
 <div class="campaign-card">
 <h3>🦟 Malaria Prevention</h3>
-<p>Promote mosquito nets, environmental cleanliness
-and early testing for suspected malaria.</p>
+<p>
+Promote mosquito nets, environmental cleanliness
+and early testing for suspected malaria.
+</p>
 </div>
 
 <div class="campaign-card">
 <h3>💉 Immunization Awareness</h3>
-<p>Encourage appropriate vaccination and access
-to recommended immunization services.</p>
+<p>
+Encourage appropriate vaccination and access
+to recommended immunization services.
+</p>
 </div>
 
 <div class="campaign-card">
 <h3>❤️ Healthy Heart Campaign</h3>
-<p>Encourage physical activity, healthy eating
-and blood pressure screening.</p>
+<p>
+Encourage physical activity, healthy eating
+and blood pressure screening.
+</p>
 </div>
 
 <div class="campaign-card">
 <h3>🌍 Clean Environment Campaign</h3>
-<p>Encourage proper sanitation, waste disposal
-and safe drinking water.</p>
+<p>
+Encourage proper sanitation, waste disposal
+and safe drinking water.
+</p>
 </div>
 
 </div>
 </div>
 </section>
 
-<!-- =================================
-     ABOUT AFYANEXA
-================================= -->
+<!-- ABOUT AFYANEXA -->
 
 <section class="about" id="about">
 
@@ -1116,7 +1023,6 @@ and safe drinking water.</p>
 </div>
 
 <h3>Project Identity</h3>
-
 <p>
 AfyaNexa is a digital health promotion and disease
 prevention initiative developed by HPS Tech Digital
@@ -1125,7 +1031,6 @@ Science and Technology.
 </p>
 
 <h3>Our Vision</h3>
-
 <p>
 To become a trusted digital health promotion resource
 that empowers individuals, families and communities
@@ -1133,7 +1038,6 @@ to achieve healthier lives.
 </p>
 
 <h3>Our Mission</h3>
-
 <p>
 To provide accessible, practical and evidence-informed
 health information that promotes disease prevention,
@@ -1142,7 +1046,6 @@ health decisions.
 </p>
 
 <h3>Our Objectives</h3>
-
 <ul>
 <li>Promote disease prevention and healthy living.</li>
 <li>Improve public health awareness and health literacy.</li>
@@ -1154,30 +1057,24 @@ health decisions.
 </ul>
 
 <h3>Our Motto</h3>
-
 <p><strong>Work Smart, Not Harder!</strong></p>
 
 </div>
 </section>
 
-<!-- =================================
-     DEVELOPERS
-================================= -->
+<!-- DEVELOPERS -->
 
 <section class="developers" id="developers">
 
 <div class="container">
 
 <div class="section-heading">
-
 <h2>Meet the Development Team</h2>
-
 <p>
 HPS Tech Digital Innovation Team
 <br>
 Masinde Muliro University of Science and Technology
 </p>
-
 </div>
 
 <div class="developer-grid">
@@ -1226,9 +1123,7 @@ after the respective team members have given consent.
 </div>
 </section>
 
-<!-- =================================
-     CONTACT
-================================= -->
+<!-- CONTACT -->
 
 <section class="contact" id="contact">
 
@@ -1248,9 +1143,7 @@ Masinde Muliro University of Science and Technology
 (MMUST)
 </p>
 
-<p>
-Project: AfyaNexa
-</p>
+<p>Project: AfyaNexa</p>
 
 <p>
 Focus: Health Promotion, Disease Prevention,
@@ -1265,9 +1158,7 @@ Public Health and Sports Science.
 </div>
 </section>
 
-<!-- =================================
-     DISCLAIMER
-================================= -->
+<!-- DISCLAIMER -->
 
 <div class="container">
 
@@ -1295,9 +1186,7 @@ before publication.
 </div>
 </div>
 
-<!-- =================================
-     FOOTER
-================================= -->
+<!-- FOOTER -->
 
 <footer>
 
@@ -1305,8 +1194,10 @@ before publication.
 
 <h2>AfyaNexa</h2>
 
-<p>Promoting Health, Preventing Diseases and
-Building Healthier Communities.</p>
+<p>
+Promoting Health, Preventing Diseases and
+Building Healthier Communities.
+</p>
 
 <p>Developed by HPS Tech Digital Innovation Team.</p>
 
@@ -1324,203 +1215,197 @@ All Rights Reserved.
 </div>
 </footer>
 
-<!-- =================================
-     JAVASCRIPT
-================================= -->
+<!-- JAVASCRIPT -->
 
 <script>
 
-/* =================================
-   1. HEALTH TOPIC INFORMATION
-================================= */
+/* HEALTH TOPIC INFORMATION */
 
 const topics = {
 
 1: {
-title: "General Health Promotion and Healthy Living",
-what: "Health promotion involves helping people improve their health through healthy habits and informed decisions.",
-risk: "Poor hygiene, inactivity, unhealthy diets, tobacco use and harmful alcohol consumption increase health risks.",
-prevent: "Wash hands regularly, eat balanced meals, exercise, sleep adequately and attend appropriate health checks.",
-warning: "Persistent pain, unexplained weight loss, fever or unusual changes in your health require professional assessment.",
-action: "Adopt healthy routines and seek healthcare early when health concerns arise."
+title:"General Health Promotion and Healthy Living",
+what:"Health promotion involves helping people improve their health through healthy habits and informed decisions.",
+risk:"Poor hygiene, inactivity, unhealthy diets, tobacco use and harmful alcohol consumption increase health risks.",
+prevent:"Wash hands regularly, eat balanced meals, exercise, sleep adequately and attend appropriate health checks.",
+warning:"Persistent pain, unexplained weight loss, fever or unusual changes in your health require professional assessment.",
+action:"Adopt healthy routines and seek healthcare early when health concerns arise."
 },
 
 2: {
-title: "Primary Health Care and Community-Based Prevention",
-what: "Primary healthcare provides accessible essential health services close to where people live.",
-risk: "Delayed healthcare, missed screening and limited access to preventive services can increase health complications.",
-prevent: "Attend appropriate health checks, use immunization services and participate in community health activities.",
-warning: "Unusual symptoms or worsening health conditions should be assessed by a qualified health professional.",
-action: "Visit an appropriate health facility or community health service for guidance and referral."
+title:"Primary Health Care and Community-Based Prevention",
+what:"Primary healthcare provides accessible essential health services close to where people live.",
+risk:"Delayed healthcare, missed screening and limited access to preventive services can increase health complications.",
+prevent:"Attend appropriate health checks, use immunization services and participate in community health activities.",
+warning:"Unusual symptoms or worsening health conditions should be assessed by a qualified health professional.",
+action:"Visit an appropriate health facility or community health service for guidance and referral."
 },
 
 3: {
-title: "Maternal, Newborn and Child Health",
-what: "Maternal and child health promotes the wellbeing of mothers, newborns and children before and after birth.",
-risk: "Poor nutrition, infections, inadequate antenatal care and delayed emergency care increase risks.",
-prevent: "Attend antenatal visits, follow professional advice, practise safe hygiene and support recommended breastfeeding.",
-warning: "Heavy bleeding, severe headache, convulsions, breathing difficulty and newborn feeding problems require urgent assessment.",
-action: "Seek antenatal, delivery and postnatal services from qualified healthcare professionals."
+title:"Maternal, Newborn and Child Health",
+what:"Maternal and child health promotes the wellbeing of mothers, newborns and children before and after birth.",
+risk:"Poor nutrition, infections, inadequate antenatal care and delayed emergency care increase risks.",
+prevent:"Attend antenatal visits, follow professional advice, practise safe hygiene and support recommended breastfeeding.",
+warning:"Heavy bleeding, severe headache, convulsions, breathing difficulty and newborn feeding problems require urgent assessment.",
+action:"Seek antenatal, delivery and postnatal services from qualified healthcare professionals."
 },
 
 4: {
-title: "Immunization and Vaccination",
-what: "Vaccination helps the immune system develop protection against specific infectious diseases.",
-risk: "Missed doses and incomplete vaccination can leave people vulnerable to preventable infections.",
-prevent: "Follow the current Kenya Ministry of Health immunization schedule and keep vaccination records.",
-warning: "Difficulty breathing, facial swelling or collapse after vaccination may indicate a severe allergic reaction requiring emergency care.",
-action: "Visit a qualified vaccination provider for the correct schedule and advice about missed doses."
+title:"Immunization and Vaccination",
+what:"Vaccination helps the immune system develop protection against specific infectious diseases.",
+risk:"Missed doses and incomplete vaccination can leave people vulnerable to preventable infections.",
+prevent:"Follow the current Kenya Ministry of Health immunization schedule and keep vaccination records.",
+warning:"Difficulty breathing, facial swelling or collapse after vaccination may indicate a severe allergic reaction requiring emergency care.",
+action:"Visit a qualified vaccination provider for the correct schedule and advice about missed doses."
 },
 
 5: {
-title: "Communicable Diseases",
-what: "Communicable diseases are illnesses caused by infectious organisms that can spread between people or through other routes.",
-risk: "Unsafe water, poor sanitation, unprotected sexual activity, mosquito bites and close exposure to infections increase risks.",
-prevent: "Use mosquito nets, practise safe sex, wash hands, drink safe water and follow recommended vaccination guidance.",
-warning: "Persistent fever, difficulty breathing, severe diarrhoea or coughing blood require medical assessment.",
-action: "Seek testing and appropriate treatment. Follow professional infection-control advice."
+title:"Communicable Diseases",
+what:"Communicable diseases are illnesses caused by infectious organisms that can spread between people or through other routes.",
+risk:"Unsafe water, poor sanitation, unprotected sexual activity, mosquito bites and close exposure to infections increase risks.",
+prevent:"Use mosquito nets, practise safe sex, wash hands, drink safe water and follow recommended vaccination guidance.",
+warning:"Persistent fever, difficulty breathing, severe diarrhoea or coughing blood require medical assessment.",
+action:"Seek testing and appropriate treatment. Follow professional infection-control advice."
 },
 
 6: {
-title: "Non-Communicable Diseases",
-what: "Non-communicable diseases include conditions such as diabetes, cancer and cardiovascular diseases.",
-risk: "Tobacco, harmful alcohol use, inactivity, unhealthy diets and certain inherited factors increase risks.",
-prevent: "Exercise regularly, eat healthily, avoid tobacco and attend recommended screening.",
-warning: "Chest pain, sudden weakness, severe breathing difficulty or signs of stroke require emergency assistance.",
-action: "Attend appropriate screening and follow prescribed medical care."
+title:"Non-Communicable Diseases",
+what:"Non-communicable diseases include conditions such as diabetes, cancer and cardiovascular diseases.",
+risk:"Tobacco, harmful alcohol use, inactivity, unhealthy diets and certain inherited factors increase risks.",
+prevent:"Exercise regularly, eat healthily, avoid tobacco and attend recommended screening.",
+warning:"Chest pain, sudden weakness, severe breathing difficulty or signs of stroke require emergency assistance.",
+action:"Attend appropriate screening and follow prescribed medical care."
 },
 
 7: {
-title: "Nutrition and Healthy Eating",
-what: "Healthy nutrition provides the body with nutrients needed for growth, energy and disease prevention.",
-risk: "Poor dietary variety, excessive salt, unhealthy fats and inadequate food intake can harm health.",
-prevent: "Eat varied foods such as vegetables, fruits, beans, whole grains, eggs and other suitable protein sources.",
-warning: "Persistent weakness, unexplained weight changes and signs of malnutrition require assessment.",
-action: "Seek professional nutrition advice when dietary or nutritional concerns arise."
+title:"Nutrition and Healthy Eating",
+what:"Healthy nutrition provides the body with nutrients needed for growth, energy and disease prevention.",
+risk:"Poor dietary variety, excessive salt, unhealthy fats and inadequate food intake can harm health.",
+prevent:"Eat varied foods such as vegetables, fruits, beans, whole grains, eggs and other suitable protein sources.",
+warning:"Persistent weakness, unexplained weight changes and signs of malnutrition require assessment.",
+action:"Seek professional nutrition advice when dietary or nutritional concerns arise."
 },
 
 8: {
-title: "Environmental Health",
-what: "Environmental health focuses on environmental conditions that affect human health.",
-risk: "Contaminated water, poor waste disposal, pollution and unsafe sanitation increase disease risks.",
-prevent: "Use safe water, dispose of waste properly, maintain clean surroundings and control mosquito breeding sites.",
-warning: "Suspected waterborne disease outbreaks or widespread illness require prompt reporting to health authorities.",
-action: "Support community sanitation and seek safe water and environmental health services."
+title:"Environmental Health",
+what:"Environmental health focuses on environmental conditions that affect human health.",
+risk:"Contaminated water, poor waste disposal, pollution and unsafe sanitation increase disease risks.",
+prevent:"Use safe water, dispose of waste properly, maintain clean surroundings and control mosquito breeding sites.",
+warning:"Suspected waterborne disease outbreaks or widespread illness require prompt reporting to health authorities.",
+action:"Support community sanitation and seek safe water and environmental health services."
 },
 
 9: {
-title: "Mental Health and Psychosocial Wellbeing",
-what: "Mental health affects how people think, feel, cope with stress and interact with others.",
-risk: "Prolonged stress, social isolation, trauma and substance misuse may affect mental wellbeing.",
-prevent: "Maintain social connections, sleep adequately, exercise and develop healthy coping strategies.",
-warning: "Persistent hopelessness, severe distress or thoughts of suicide require prompt professional support. Immediate danger requires emergency assistance.",
-action: "Speak to a qualified mental health professional or trusted healthcare provider."
+title:"Mental Health and Psychosocial Wellbeing",
+what:"Mental health affects how people think, feel, cope with stress and interact with others.",
+risk:"Prolonged stress, social isolation, trauma and substance misuse may affect mental wellbeing.",
+prevent:"Maintain social connections, sleep adequately, exercise and develop healthy coping strategies.",
+warning:"Persistent hopelessness, severe distress or thoughts of suicide require prompt professional support. Immediate danger requires emergency assistance.",
+action:"Speak to a qualified mental health professional or trusted healthcare provider."
 },
 
 10: {
-title: "Sexual and Reproductive Health",
-what: "Sexual and reproductive health supports informed and responsible decisions throughout life.",
-risk: "Unprotected sex, limited access to information and missed screening increase health risks.",
-prevent: "Use appropriate contraception, practise safer sex and access recommended STI and HIV testing.",
-warning: "Unusual genital discharge, sores, severe pelvic pain or unusual bleeding require medical assessment.",
-action: "Visit a qualified reproductive health provider for confidential guidance and care."
+title:"Sexual and Reproductive Health",
+what:"Sexual and reproductive health supports informed and responsible decisions throughout life.",
+risk:"Unprotected sex, limited access to information and missed screening increase health risks.",
+prevent:"Use appropriate contraception, practise safer sex and access recommended STI and HIV testing.",
+warning:"Unusual genital discharge, sores, severe pelvic pain or unusual bleeding require medical assessment.",
+action:"Visit a qualified reproductive health provider for confidential guidance and care."
 },
 
 11: {
-title: "Adolescent and School Health",
-what: "Adolescent health supports physical, emotional and social development among young people.",
-risk: "Substance misuse, poor nutrition, bullying, unsafe environments and inadequate health information may affect wellbeing.",
-prevent: "Maintain hygiene, eat balanced meals, exercise and seek reliable health information.",
-warning: "Severe emotional distress, injuries or persistent illness should be addressed promptly.",
-action: "Seek support from trusted adults, school health services or qualified professionals."
+title:"Adolescent and School Health",
+what:"Adolescent health supports physical, emotional and social development among young people.",
+risk:"Substance misuse, poor nutrition, bullying, unsafe environments and inadequate health information may affect wellbeing.",
+prevent:"Maintain hygiene, eat balanced meals, exercise and seek reliable health information.",
+warning:"Severe emotional distress, injuries or persistent illness should be addressed promptly.",
+action:"Seek support from trusted adults, school health services or qualified professionals."
 },
 
 12: {
-title: "Community Health Promotion",
-what: "Community health promotion encourages individuals and groups to improve the health of their surroundings.",
-risk: "Poor sanitation, low health awareness and limited participation can increase community health challenges.",
-prevent: "Organise awareness campaigns, community clean-ups, screening outreach and health education.",
-warning: "Unusual clusters of illness should be reported promptly to local health authorities.",
-action: "Work with community health promoters and appropriate healthcare services."
+title:"Community Health Promotion",
+what:"Community health promotion encourages individuals and groups to improve the health of their surroundings.",
+risk:"Poor sanitation, low health awareness and limited participation can increase community health challenges.",
+prevent:"Organise awareness campaigns, community clean-ups, screening outreach and health education.",
+warning:"Unusual clusters of illness should be reported promptly to local health authorities.",
+action:"Work with community health promoters and appropriate healthcare services."
 },
 
 13: {
-title: "Health Education and Communication",
-what: "Health communication provides understandable information that helps people make informed health decisions.",
-risk: "Misinformation and unclear messages can encourage unsafe health practices.",
-prevent: "Use trusted sources, verify health claims and communicate information in accessible language.",
-warning: "Dangerous health claims and false treatment advice should not be followed without professional verification.",
-action: "Consult recognised health authorities and qualified professionals."
+title:"Health Education and Communication",
+what:"Health communication provides understandable information that helps people make informed health decisions.",
+risk:"Misinformation and unclear messages can encourage unsafe health practices.",
+prevent:"Use trusted sources, verify health claims and communicate information in accessible language.",
+warning:"Dangerous health claims and false treatment advice should not be followed without professional verification.",
+action:"Consult recognised health authorities and qualified professionals."
 },
 
 14: {
-title: "Epidemiology and Disease Prevention",
-what: "Epidemiology studies how diseases occur and spread within populations.",
-risk: "Poor surveillance, delayed reporting and exposure to infectious sources can increase outbreak risks.",
-prevent: "Promote vaccination, surveillance, hygiene and timely disease reporting.",
-warning: "Unusual increases in similar illnesses should be reported to public health authorities.",
-action: "Follow official public health advice and cooperate with prevention measures."
+title:"Epidemiology and Disease Prevention",
+what:"Epidemiology studies how diseases occur and spread within populations.",
+risk:"Poor surveillance, delayed reporting and exposure to infectious sources can increase outbreak risks.",
+prevent:"Promote vaccination, surveillance, hygiene and timely disease reporting.",
+warning:"Unusual increases in similar illnesses should be reported to public health authorities.",
+action:"Follow official public health advice and cooperate with prevention measures."
 },
 
 15: {
-title: "Occupational Health and Safety",
-what: "Occupational health protects workers against workplace hazards and work-related illnesses.",
-risk: "Unsafe equipment, poor posture, chemical exposure and inadequate protective equipment increase risks.",
-prevent: "Use appropriate protective equipment, maintain safe workplaces and follow safety procedures.",
-warning: "Serious injuries, chemical exposure or breathing difficulties require immediate assessment.",
-action: "Report hazards and seek occupational health services."
+title:"Occupational Health and Safety",
+what:"Occupational health protects workers against workplace hazards and work-related illnesses.",
+risk:"Unsafe equipment, poor posture, chemical exposure and inadequate protective equipment increase risks.",
+prevent:"Use appropriate protective equipment, maintain safe workplaces and follow safety procedures.",
+warning:"Serious injuries, chemical exposure or breathing difficulties require immediate assessment.",
+action:"Report hazards and seek occupational health services."
 },
 
 16: {
-title: "Sports Science and Health Promotion",
-what: "Sports science applies scientific knowledge to physical activity, athletic performance and wellbeing.",
-risk: "Overtraining, poor hydration, inadequate recovery and unsafe equipment increase injury risks.",
-prevent: "Warm up, use suitable equipment, hydrate and allow adequate recovery.",
-warning: "Severe pain, collapse, head injury or breathing difficulty during sports require urgent assessment.",
-action: "Seek qualified medical or sports healthcare assistance when injured."
+title:"Sports Science and Health Promotion",
+what:"Sports science applies scientific knowledge to physical activity, athletic performance and wellbeing.",
+risk:"Overtraining, poor hydration, inadequate recovery and unsafe equipment increase injury risks.",
+prevent:"Warm up, use suitable equipment, hydrate and allow adequate recovery.",
+warning:"Severe pain, collapse, head injury or breathing difficulty during sports require urgent assessment.",
+action:"Seek qualified medical or sports healthcare assistance when injured."
 },
 
 17: {
-title: "Physical Activity, Exercise and Fitness",
-what: "Physical activity includes movement that improves physical fitness and supports overall health.",
-risk: "Prolonged sitting and physical inactivity increase the risk of several chronic diseases.",
-prevent: "Walk, cycle, participate in sports and gradually build regular exercise routines.",
-warning: "Chest pain, fainting and severe breathing difficulty during exercise require urgent medical help.",
-action: "Choose activities appropriate to your fitness and health status."
+title:"Physical Activity, Exercise and Fitness",
+what:"Physical activity includes movement that improves physical fitness and supports overall health.",
+risk:"Prolonged sitting and physical inactivity increase the risk of several chronic diseases.",
+prevent:"Walk, cycle, participate in sports and gradually build regular exercise routines.",
+warning:"Chest pain, fainting and severe breathing difficulty during exercise require urgent medical help.",
+action:"Choose activities appropriate to your fitness and health status."
 },
 
 18: {
-title: "First Aid and Safety Education",
-what: "First aid provides immediate assistance to someone who is injured or suddenly becomes ill.",
-risk: "Road accidents, falls, burns, choking and sports injuries are common emergencies.",
-prevent: "Learn first aid, maintain safe environments and follow injury prevention practices.",
-warning: "Unresponsiveness, severe bleeding, difficulty breathing and serious burns require emergency assistance.",
-action: "Call emergency services, provide safe first aid within your training and obtain professional medical care."
+title:"First Aid and Safety Education",
+what:"First aid provides immediate assistance to someone who is injured or suddenly becomes ill.",
+risk:"Road accidents, falls, burns, choking and sports injuries are common emergencies.",
+prevent:"Learn first aid, maintain safe environments and follow injury prevention practices.",
+warning:"Unresponsiveness, severe bleeding, difficulty breathing and serious burns require emergency assistance.",
+action:"Call emergency services, provide safe first aid within your training and obtain professional medical care."
 },
 
 19: {
-title: "Health Systems and Healthcare Services",
-what: "Health systems organise healthcare services, professionals, facilities and resources to protect population health.",
-risk: "Delayed care, financial barriers and poor health awareness may limit access to services.",
-prevent: "Understand available health services, seek preventive care and learn about available health financing options.",
-warning: "Serious symptoms should never be ignored because of uncertainty about where to seek care.",
-action: "Visit an appropriate health facility and follow referral advice."
+title:"Health Systems and Healthcare Services",
+what:"Health systems organise healthcare services, professionals, facilities and resources to protect population health.",
+risk:"Delayed care, financial barriers and poor health awareness may limit access to services.",
+prevent:"Understand available health services, seek preventive care and learn about available health financing options.",
+warning:"Serious symptoms should never be ignored because of uncertainty about where to seek care.",
+action:"Visit an appropriate health facility and follow referral advice."
 },
 
 20: {
-title: "Research and Evidence-Based Prevention",
-what: "Evidence-based prevention uses reliable research and health information to guide health decisions.",
-risk: "Misinformation, unreliable research and unverified remedies can lead to harmful decisions.",
-prevent: "Use recognised sources such as WHO, UNICEF and the Kenya Ministry of Health.",
-warning: "Unverified treatment claims and misleading health statistics should be questioned.",
-action: "Check health recommendations against recognised professional and public health sources."
+title:"Research and Evidence-Based Prevention",
+what:"Evidence-based prevention uses reliable research and health information to guide health decisions.",
+risk:"Misinformation, unreliable research and unverified remedies can lead to harmful decisions.",
+prevent:"Use recognised sources such as WHO, UNICEF and the Kenya Ministry of Health.",
+warning:"Unverified treatment claims and misleading health statistics should be questioned.",
+action:"Check health recommendations against recognised professional and public health sources."
 }
 
 };
 
-/* =================================
-   2. DISPLAY HEALTH TOPICS
-================================= */
+/* DISPLAY TOPIC INFORMATION */
 
 function showTopic(number) {
 
@@ -1532,7 +1417,7 @@ function showTopic(number) {
         topic.title;
 
     document.getElementById("detailContent").innerHTML = `
-    
+
         <h3>What is it?</h3>
         <p>${topic.what}</p>
 
@@ -1558,22 +1443,15 @@ function showTopic(number) {
         behavior: "smooth",
         block: "start"
     });
-
 }
 
-/* =================================
-   3. CLOSE TOPIC
-================================= */
+/* CLOSE TOPIC */
 
 function closeTopic() {
-
     document.getElementById("topicDetails").style.display = "none";
-
 }
 
-/* =================================
-   4. SEARCH FUNCTION
-================================= */
+/* SEARCH HEALTH TOPICS */
 
 function searchTopics() {
 
@@ -1586,23 +1464,14 @@ function searchTopics() {
 
         const content = card.textContent.toLowerCase();
 
-        if (content.includes(input)) {
-
-            card.style.display = "block";
-
-        } else {
-
-            card.style.display = "none";
-
-        }
+        card.style.display = content.includes(input)
+            ? "block"
+            : "none";
 
     });
-
 }
 
-/* =================================
-   5. LANGUAGE SWITCH
-================================= */
+/* ENGLISH AND KISWAHILI SWITCH */
 
 let kiswahili = false;
 
@@ -1638,17 +1507,20 @@ function toggleLanguage() {
         document.querySelector("#firstaid .section-heading h2").textContent =
             "Huduma ya Kwanza na Uelewa wa Dharura";
 
+        document.querySelector("#tips .section-heading h2").textContent =
+            "Vidokezo vya Maisha Bora ya Kila Siku";
+
+        document.querySelector("#about .section-heading h2").textContent =
+            "Kuhusu AfyaNexa";
+
     } else {
 
         location.reload();
 
     }
-
 }
 
-/* =================================
-   6. AUTOMATIC COPYRIGHT YEAR
-================================= */
+/* AUTOMATIC COPYRIGHT YEAR */
 
 document.getElementById("year").textContent =
     new Date().getFullYear();
