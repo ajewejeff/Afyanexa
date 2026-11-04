@@ -1,0 +1,1659 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#087f5b">
+
+<meta name="description" content="AfyaNexa promotes health, prevents diseases and builds healthier communities through practical health information and sports science.">
+
+<title>AfyaNexa | Promoting Health, Preventing Diseases</title>
+
+<style>
+
+/* =================================
+   1. GENERAL WEBSITE STYLING
+================================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+:root {
+    --green: #087f5b;
+    --dark-green: #064d39;
+    --light-green: #e8f7ef;
+    --gold: #f4bd45;
+    --white: #ffffff;
+    --dark: #183b2e;
+    --grey: #64748b;
+    --background: #f5faf7;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: var(--background);
+    color: var(--dark);
+    line-height: 1.7;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+button {
+    cursor: pointer;
+    font-family: inherit;
+}
+
+.container {
+    width: 92%;
+    max-width: 1150px;
+    margin: auto;
+}
+
+section {
+    padding: 65px 0;
+}
+
+.section-heading {
+    text-align: center;
+    margin-bottom: 35px;
+}
+
+.section-heading h2 {
+    color: var(--dark-green);
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+.section-heading p {
+    color: var(--grey);
+}
+
+/* =================================
+   2. HEADER AND NAVIGATION
+================================= */
+
+header {
+    background: var(--white);
+    padding: 15px 0;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.08);
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 12px;
+}
+
+.logo {
+    color: var(--green);
+    font-size: 27px;
+    font-weight: bold;
+}
+
+.logo span {
+    color: var(--gold);
+}
+
+.nav-links {
+    display: flex;
+    gap: 17px;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.nav-links a {
+    color: var(--dark);
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.nav-links a:hover {
+    color: var(--green);
+}
+
+.language-btn {
+    border: none;
+    background: var(--green);
+    color: white;
+    padding: 9px 15px;
+    border-radius: 20px;
+}
+
+/* =================================
+   3. HERO SECTION
+================================= */
+
+.hero {
+    background: linear-gradient(
+        120deg,
+        #064d39,
+        #087f5b,
+        #14966c
+    );
+    color: white;
+    padding: 90px 0;
+    text-align: center;
+}
+
+.hero h1 {
+    font-size: clamp(32px, 6vw, 52px);
+    margin-bottom: 15px;
+}
+
+.hero h1 span {
+    color: var(--gold);
+}
+
+.hero p {
+    max-width: 750px;
+    margin: 15px auto;
+    font-size: 17px;
+}
+
+.hero-buttons {
+    margin-top: 25px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 12px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 12px 23px;
+    border-radius: 7px;
+    font-weight: bold;
+    border: none;
+}
+
+.btn-primary {
+    background: var(--gold);
+    color: var(--dark);
+}
+
+.btn-secondary {
+    background: white;
+    color: var(--green);
+}
+
+/* =================================
+   4. INTRODUCTION
+================================= */
+
+.intro {
+    background: white;
+    text-align: center;
+}
+
+.intro-content {
+    max-width: 850px;
+    margin: auto;
+}
+
+.intro h2 {
+    color: var(--green);
+    margin-bottom: 15px;
+    font-size: 28px;
+}
+
+/* =================================
+   5. STATISTICS
+================================= */
+
+.stats-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 18px;
+}
+
+.stat-card {
+    background: white;
+    padding: 25px;
+    border-radius: 12px;
+    text-align: center;
+    box-shadow: 0 3px 12px rgba(0,0,0,0.05);
+}
+
+.stat-card h3 {
+    color: var(--green);
+    font-size: 30px;
+}
+
+/* =================================
+   6. HEALTH TOPICS
+================================= */
+
+.topics-section {
+    background: var(--background);
+}
+
+.search-box {
+    width: 100%;
+    max-width: 650px;
+    display: block;
+    margin: 0 auto 30px;
+    padding: 15px;
+    border: 1px solid #cbd5e1;
+    border-radius: 8px;
+    font-size: 16px;
+    outline-color: var(--green);
+}
+
+.topic-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 20px;
+}
+
+.topic-card {
+    background: white;
+    border-radius: 12px;
+    padding: 23px;
+    box-shadow: 0 3px 12px rgba(0,0,0,0.05);
+    transition: 0.3s;
+    border-bottom: 4px solid var(--green);
+}
+
+.topic-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+}
+
+.topic-icon {
+    font-size: 35px;
+    margin-bottom: 10px;
+}
+
+.topic-card h3 {
+    color: var(--dark-green);
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.topic-card p {
+    color: var(--grey);
+    font-size: 14px;
+}
+
+.read-btn {
+    background: var(--green);
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 6px;
+    margin-top: 15px;
+}
+
+/* =================================
+   7. TOPIC DETAILS
+================================= */
+
+.details {
+    display: none;
+    background: white;
+    padding: 30px;
+    margin-top: 30px;
+    border-radius: 12px;
+    border-left: 5px solid var(--green);
+}
+
+.details h3 {
+    color: var(--green);
+    margin: 15px 0 5px;
+}
+
+.details ul {
+    padding-left: 22px;
+}
+
+.close-btn {
+    background: #b42318;
+    color: white;
+    border: none;
+    padding: 9px 15px;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+
+/* =================================
+   8. FIRST AID SECTION
+================================= */
+
+.first-aid {
+    background: #fff5ed;
+}
+
+.first-aid-content {
+    max-width: 900px;
+    margin: auto;
+    background: white;
+    padding: 30px;
+    border-radius: 12px;
+}
+
+.first-aid-content h3 {
+    color: #a13b16;
+    margin-top: 18px;
+}
+
+.emergency {
+    background: #fee2e2;
+    padding: 15px;
+    border-left: 5px solid #dc2626;
+    margin-top: 20px;
+    border-radius: 5px;
+}
+
+/* =================================
+   9. HEALTH TIPS
+================================= */
+
+.tips-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 20px;
+}
+
+.tip-card {
+    background: white;
+    padding: 22px;
+    border-radius: 10px;
+    border-top: 4px solid var(--gold);
+}
+
+.tip-card h3 {
+    color: var(--green);
+    margin-bottom: 10px;
+}
+
+/* =================================
+   10. CAMPAIGNS
+================================= */
+
+.campaigns {
+    background: var(--light-green);
+}
+
+.campaign-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+    gap: 20px;
+}
+
+.campaign-card {
+    background: white;
+    padding: 25px;
+    border-radius: 10px;
+}
+
+/* =================================
+   11. ABOUT SECTION
+================================= */
+
+.about {
+    background: white;
+}
+
+.about-content {
+    max-width: 900px;
+    margin: auto;
+}
+
+.about-content h3 {
+    color: var(--green);
+    margin-top: 20px;
+}
+
+/* =================================
+   12. DEVELOPERS SECTION
+================================= */
+
+.developers {
+    background: var(--background);
+}
+
+.developer-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+    gap: 20px;
+}
+
+.developer-card {
+    background: white;
+    text-align: center;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 3px 12px rgba(0,0,0,0.05);
+}
+
+.developer-icon {
+    width: 65px;
+    height: 65px;
+    border-radius: 50%;
+    margin: 0 auto 15px;
+    background: var(--light-green);
+    color: var(--green);
+    display: grid;
+    place-items: center;
+    font-size: 28px;
+}
+
+.developer-card h3 {
+    color: var(--dark-green);
+}
+
+/* =================================
+   13. CONTACT SECTION
+================================= */
+
+.contact {
+    background: white;
+    text-align: center;
+}
+
+.contact-box {
+    max-width: 650px;
+    margin: auto;
+    background: var(--light-green);
+    padding: 30px;
+    border-radius: 12px;
+}
+
+/* =================================
+   14. DISCLAIMER
+================================= */
+
+.disclaimer {
+    background: #fff7df;
+    padding: 25px;
+    border-left: 5px solid var(--gold);
+    margin: 30px auto;
+    border-radius: 6px;
+}
+
+/* =================================
+   15. FOOTER
+================================= */
+
+footer {
+    background: var(--dark-green);
+    color: white;
+    padding: 35px 0;
+    text-align: center;
+}
+
+footer p {
+    margin: 7px 0;
+}
+
+footer a {
+    color: var(--gold);
+}
+
+/* =================================
+   16. RESPONSIVE DESIGN
+================================= */
+
+@media(max-width: 750px) {
+
+    .navbar {
+        justify-content: center;
+    }
+
+    .nav-links {
+        justify-content: center;
+    }
+
+    .nav-links a {
+        font-size: 12px;
+    }
+
+    .hero {
+        padding: 65px 15px;
+    }
+
+    section {
+        padding: 45px 0;
+    }
+
+    .section-heading h2 {
+        font-size: 25px;
+    }
+
+    .details {
+        padding: 20px;
+    }
+}
+
+</style>
+</head>
+
+<body>
+
+<!-- =================================
+     HEADER
+================================= -->
+
+<header>
+<div class="container navbar">
+
+<a href="#home" class="logo">
+Afya<span>Nexa</span>
+</a>
+
+<nav class="nav-links">
+<a href="#home">Home</a>
+<a href="#topics">Health Topics</a>
+<a href="#firstaid">First Aid</a>
+<a href="#tips">Health Tips</a>
+<a href="#about">About</a>
+<a href="#developers">Developers</a>
+<a href="#contact">Contact</a>
+</nav>
+
+<button class="language-btn" onclick="toggleLanguage()">
+Kiswahili
+</button>
+
+</div>
+</header>
+
+<!-- =================================
+     HERO
+================================= -->
+
+<section class="hero" id="home">
+
+<div class="container">
+
+<h1>
+Welcome to <span>AfyaNexa</span>
+</h1>
+
+<h2>Promoting Health, Preventing Diseases</h2>
+
+<p>
+Your trusted digital health promotion resource.
+Discover practical health information, disease prevention
+strategies, sports science guidance and healthy lifestyle
+practices for individuals, families and communities.
+</p>
+
+<p><strong>Work Smart, Not Harder!</strong></p>
+
+<div class="hero-buttons">
+
+<a href="#topics" class="btn btn-primary">
+Explore Health Topics
+</a>
+
+<a href="#about" class="btn btn-secondary">
+Discover AfyaNexa
+</a>
+
+</div>
+
+</div>
+</section>
+
+<!-- =================================
+     INTRODUCTION
+================================= -->
+
+<section class="intro">
+
+<div class="container intro-content">
+
+<h2>Better Health Starts With You</h2>
+
+<p>
+AfyaNexa is a digital health promotion initiative
+established by the HPS Tech Digital Innovation Team
+at Masinde Muliro University of Science and Technology
+(MMUST).
+
+Our mission is to empower people with practical,
+understandable and evidence-informed health information
+that supports disease prevention, healthy lifestyles
+and stronger communities.
+</p>
+
+</div>
+
+</section>
+
+<!-- =================================
+     PROJECT OVERVIEW
+================================= -->
+
+<section>
+
+<div class="container">
+
+<div class="section-heading">
+<h2>Explore AfyaNexa</h2>
+<p>Discover our major health promotion areas.</p>
+</div>
+
+<div class="stats-grid">
+
+<div class="stat-card">
+<h3>20</h3>
+<p>Health Promotion Areas</p>
+</div>
+
+<div class="stat-card">
+<h3>01</h3>
+<p>Central Health Mission</p>
+</div>
+
+<div class="stat-card">
+<h3>HPS</h3>
+<p>Health Promotion and Sports Science</p>
+</div>
+
+<div class="stat-card">
+<h3>Kenya</h3>
+<p>Our Community Focus</p>
+</div>
+
+</div>
+</div>
+</section>
+
+<!-- =================================
+     HEALTH TOPICS
+================================= -->
+
+<section class="topics-section" id="topics">
+
+<div class="container">
+
+<div class="section-heading">
+<h2>Health Information Centre</h2>
+<p>
+Explore 20 important areas of health promotion,
+disease prevention and sports science.
+</p>
+</div>
+
+<input
+type="text"
+id="searchInput"
+class="search-box"
+placeholder="Search health topics..."
+onkeyup="searchTopics()"
+>
+
+<div class="topic-grid" id="topicGrid">
+
+<!-- TOPIC 1 -->
+
+<div class="topic-card">
+<div class="topic-icon">🌿</div>
+<h3>1. General Health Promotion and Healthy Living</h3>
+<p>Discover healthy habits, personal hygiene and everyday disease prevention.</p>
+<button class="read-btn" onclick="showTopic(1)">Read More</button>
+</div>
+
+<!-- TOPIC 2 -->
+
+<div class="topic-card">
+<div class="topic-icon">🏥</div>
+<h3>2. Primary Health Care and Community Prevention</h3>
+<p>Understand preventive services, screening and community healthcare.</p>
+<button class="read-btn" onclick="showTopic(2)">Read More</button>
+</div>
+
+<!-- TOPIC 3 -->
+
+<div class="topic-card">
+<div class="topic-icon">🤱</div>
+<h3>3. Maternal, Newborn and Child Health</h3>
+<p>Promote safe pregnancy, newborn care, breastfeeding and child health.</p>
+<button class="read-btn" onclick="showTopic(3)">Read More</button>
+</div>
+
+<!-- TOPIC 4 -->
+
+<div class="topic-card">
+<div class="topic-icon">💉</div>
+<h3>4. Immunization and Vaccination</h3>
+<p>Understand vaccination, immunization schedules and vaccine safety.</p>
+<button class="read-btn" onclick="showTopic(4)">Read More</button>
+</div>
+
+<!-- TOPIC 5 -->
+
+<div class="topic-card">
+<div class="topic-icon">🦠</div>
+<h3>5. Communicable Diseases</h3>
+<p>Learn about malaria, HIV, tuberculosis and infection prevention.</p>
+<button class="read-btn" onclick="showTopic(5)">Read More</button>
+</div>
+
+<!-- TOPIC 6 -->
+
+<div class="topic-card">
+<div class="topic-icon">❤️</div>
+<h3>6. Non-Communicable Diseases</h3>
+<p>Explore prevention of diabetes, cancer, hypertension and heart disease.</p>
+<button class="read-btn" onclick="showTopic(6)">Read More</button>
+</div>
+
+<!-- TOPIC 7 -->
+
+<div class="topic-card">
+<div class="topic-icon">🥗</div>
+<h3>7. Nutrition and Healthy Eating</h3>
+<p>Learn about balanced diets, food safety and healthy Kenyan foods.</p>
+<button class="read-btn" onclick="showTopic(7)">Read More</button>
+</div>
+
+<!-- TOPIC 8 -->
+
+<div class="topic-card">
+<div class="topic-icon">🌍</div>
+<h3>8. Environmental Health</h3>
+<p>Discover clean water, sanitation, waste management and pollution prevention.</p>
+<button class="read-btn" onclick="showTopic(8)">Read More</button>
+</div>
+
+<!-- TOPIC 9 -->
+
+<div class="topic-card">
+<div class="topic-icon">🧠</div>
+<h3>9. Mental Health and Psychosocial Wellbeing</h3>
+<p>Promote emotional wellbeing, stress management and mental health awareness.</p>
+<button class="read-btn" onclick="showTopic(9)">Read More</button>
+</div>
+
+<!-- TOPIC 10 -->
+
+<div class="topic-card">
+<div class="topic-icon">🤝</div>
+<h3>10. Sexual and Reproductive Health</h3>
+<p>Understand reproductive health, family planning and STI prevention.</p>
+<button class="read-btn" onclick="showTopic(10)">Read More</button>
+</div>
+
+<!-- TOPIC 11 -->
+
+<div class="topic-card">
+<div class="topic-icon">🎓</div>
+<h3>11. Adolescent and School Health</h3>
+<p>Promote healthy development, hygiene and wellbeing among young people.</p>
+<button class="read-btn" onclick="showTopic(11)">Read More</button>
+</div>
+
+<!-- TOPIC 12 -->
+
+<div class="topic-card">
+<div class="topic-icon">👨‍👩‍👧‍👦</div>
+<h3>12. Community Health Promotion</h3>
+<p>Encourage community participation, health campaigns and household prevention.</p>
+<button class="read-btn" onclick="showTopic(12)">Read More</button>
+</div>
+
+<!-- TOPIC 13 -->
+
+<div class="topic-card">
+<div class="topic-icon">📢</div>
+<h3>13. Health Education and Communication</h3>
+<p>Improve health literacy, awareness campaigns and responsible communication.</p>
+<button class="read-btn" onclick="showTopic(13)">Read More</button>
+</div>
+
+<!-- TOPIC 14 -->
+
+<div class="topic-card">
+<div class="topic-icon">📊</div>
+<h3>14. Epidemiology and Disease Prevention</h3>
+<p>Understand disease patterns, surveillance and outbreak prevention.</p>
+<button class="read-btn" onclick="showTopic(14)">Read More</button>
+</div>
+
+<!-- TOPIC 15 -->
+
+<div class="topic-card">
+<div class="topic-icon">🦺</div>
+<h3>15. Occupational Health and Safety</h3>
+<p>Learn workplace safety, hazard prevention and healthy working environments.</p>
+<button class="read-btn" onclick="showTopic(15)">Read More</button>
+</div>
+
+<!-- TOPIC 16 -->
+
+<div class="topic-card">
+<div class="topic-icon">⚽</div>
+<h3>16. Sports Science and Health Promotion</h3>
+<p>Discover sports participation, injury prevention and athlete wellbeing.</p>
+<button class="read-btn" onclick="showTopic(16)">Read More</button>
+</div>
+
+<!-- TOPIC 17 -->
+
+<div class="topic-card">
+<div class="topic-icon">🏃</div>
+<h3>17. Physical Activity, Exercise and Fitness</h3>
+<p>Promote active living, fitness, strength and disease prevention.</p>
+<button class="read-btn" onclick="showTopic(17)">Read More</button>
+</div>
+
+<!-- TOPIC 18 -->
+
+<div class="topic-card">
+<div class="topic-icon">🚑</div>
+<h3>18. First Aid and Safety Education</h3>
+<p>Understand emergency response, CPR awareness and basic first aid.</p>
+<button class="read-btn" onclick="showTopic(18)">Read More</button>
+</div>
+
+<!-- TOPIC 19 -->
+
+<div class="topic-card">
+<div class="topic-icon">🏛️</div>
+<h3>19. Health Systems and Healthcare Services</h3>
+<p>Explore Kenya's healthcare structure, health rights and access to services.</p>
+<button class="read-btn" onclick="showTopic(19)">Read More</button>
+</div>
+
+<!-- TOPIC 20 -->
+
+<div class="topic-card">
+<div class="topic-icon">🔬</div>
+<h3>20. Research and Evidence-Based Prevention</h3>
+<p>Identify reliable health information and understand public health evidence.</p>
+<button class="read-btn" onclick="showTopic(20)">Read More</button>
+</div>
+
+</div>
+
+<!-- TOPIC DETAILS APPEAR HERE -->
+
+<div class="details" id="topicDetails">
+
+<h2 id="detailTitle"></h2>
+
+<div id="detailContent"></div>
+
+<button class="close-btn" onclick="closeTopic()">
+Close Topic
+</button>
+
+</div>
+
+</div>
+</section>
+
+<!-- =================================
+     FIRST AID SECTION
+================================= -->
+
+<section class="first-aid" id="firstaid">
+
+<div class="container">
+
+<div class="section-heading">
+<h2>🚑 First Aid and Emergency Awareness</h2>
+<p>Know what to do when an emergency happens.</p>
+</div>
+
+<div class="first-aid-content">
+
+<h3>1. Emergency Response</h3>
+
+<p>
+Check that the environment is safe before approaching
+an injured person. Call for emergency assistance.
+In Kenya, 999 or 112 can be used to request emergency
+services where available.
+</p>
+
+<h3>2. Severe Bleeding</h3>
+
+<p>
+Apply firm, continuous direct pressure to the wound
+using clean cloth or gauze. Seek urgent medical help.
+Do not remove deeply embedded objects.
+</p>
+
+<h3>3. Burns and Scalds</h3>
+
+<p>
+Cool the burn under cool running water for 20 minutes.
+Remove jewellery and loose clothing near the burn,
+but do not pull away anything stuck to the skin.
+Cover loosely with a clean, non-fluffy dressing.
+Do not apply ice, toothpaste or butter.
+</p>
+
+<h3>4. Choking</h3>
+
+<p>
+If an adult or child over one year cannot speak,
+breathe or cough effectively, call for emergency help.
+Give up to five back blows, followed by up to five
+abdominal thrusts, alternating as appropriate.
+For infants, use five back blows and five chest thrusts.
+Do not use abdominal thrusts on infants.
+Seek trained emergency assistance.
+</p>
+
+<h3>5. Seizures</h3>
+
+<p>
+Protect the person from nearby objects, cushion
+their head and time the seizure. Do not restrain them
+or put anything in their mouth. After the seizure,
+check their breathing. Seek emergency help if it lasts
+five minutes or longer, repeats, or the person has
+difficulty breathing or is injured.
+</p>
+
+<h3>6. Suspected Fractures</h3>
+
+<p>
+Keep the injured area still and supported.
+Do not attempt to straighten the bone.
+Seek professional medical assessment.
+</p>
+
+<h3>7. CPR Awareness</h3>
+
+<p>
+If someone is unresponsive and not breathing normally,
+call emergency services, obtain an AED if available
+and start CPR according to dispatcher instructions
+and your level of training. Use an AED as soon as
+available and follow its voice instructions.
+</p>
+
+<h3>8. Heatstroke</h3>
+
+<p>
+Heatstroke is a medical emergency. Warning signs
+include confusion, collapse and very high body
+temperature. Call emergency services immediately.
+Move the person to a cool place and begin rapid
+cooling using cool water and other safe cooling
+methods while awaiting assistance.
+</p>
+
+<div class="emergency">
+
+<strong>IMPORTANT EMERGENCY NOTICE</strong>
+
+<p>
+First aid information on AfyaNexa is educational.
+It does not replace practical first aid training,
+professional assessment or emergency medical care.
+Do not delay emergency assistance.
+</p>
+
+</div>
+
+</div>
+</div>
+</section>
+
+<!-- =================================
+     HEALTH TIPS
+================================= -->
+
+<section id="tips">
+
+<div class="container">
+
+<div class="section-heading">
+<h2>Daily Healthy Living Tips</h2>
+<p>Simple habits that help protect your health.</p>
+</div>
+
+<div class="tips-grid">
+
+<div class="tip-card">
+<h3>💧 Drink Safe Water</h3>
+<p>Drink adequate safe water throughout the day.</p>
+</div>
+
+<div class="tip-card">
+<h3>🥗 Eat Balanced Meals</h3>
+<p>Include vegetables, fruits, proteins and whole grains.</p>
+</div>
+
+<div class="tip-card">
+<h3>🏃 Stay Active</h3>
+<p>Participate in regular physical activity and reduce prolonged sitting.</p>
+</div>
+
+<div class="tip-card">
+<h3>🧼 Maintain Hygiene</h3>
+<p>Wash your hands with soap and water at important times.</p>
+</div>
+
+<div class="tip-card">
+<h3>😴 Get Enough Sleep</h3>
+<p>Maintain healthy sleep routines and allow your body to recover.</p>
+</div>
+
+<div class="tip-card">
+<h3>🧠 Protect Mental Health</h3>
+<p>Manage stress, seek support and maintain positive relationships.</p>
+</div>
+
+</div>
+</div>
+</section>
+
+<!-- =================================
+     HEALTH CAMPAIGNS
+================================= -->
+
+<section class="campaigns">
+
+<div class="container">
+
+<div class="section-heading">
+<h2>Health Awareness Campaigns</h2>
+<p>Promoting prevention through community awareness.</p>
+</div>
+
+<div class="campaign-grid">
+
+<div class="campaign-card">
+<h3>🦟 Malaria Prevention</h3>
+<p>Promote mosquito nets, environmental cleanliness
+and early testing for suspected malaria.</p>
+</div>
+
+<div class="campaign-card">
+<h3>💉 Immunization Awareness</h3>
+<p>Encourage appropriate vaccination and access
+to recommended immunization services.</p>
+</div>
+
+<div class="campaign-card">
+<h3>❤️ Healthy Heart Campaign</h3>
+<p>Encourage physical activity, healthy eating
+and blood pressure screening.</p>
+</div>
+
+<div class="campaign-card">
+<h3>🌍 Clean Environment Campaign</h3>
+<p>Encourage proper sanitation, waste disposal
+and safe drinking water.</p>
+</div>
+
+</div>
+</div>
+</section>
+
+<!-- =================================
+     ABOUT AFYANEXA
+================================= -->
+
+<section class="about" id="about">
+
+<div class="container about-content">
+
+<div class="section-heading">
+<h2>About AfyaNexa</h2>
+<p>Our identity, vision and mission.</p>
+</div>
+
+<h3>Project Identity</h3>
+
+<p>
+AfyaNexa is a digital health promotion and disease
+prevention initiative developed by HPS Tech Digital
+Innovation Team at Masinde Muliro University of
+Science and Technology.
+</p>
+
+<h3>Our Vision</h3>
+
+<p>
+To become a trusted digital health promotion resource
+that empowers individuals, families and communities
+to achieve healthier lives.
+</p>
+
+<h3>Our Mission</h3>
+
+<p>
+To provide accessible, practical and evidence-informed
+health information that promotes disease prevention,
+healthy lifestyles, physical activity and informed
+health decisions.
+</p>
+
+<h3>Our Objectives</h3>
+
+<ul>
+<li>Promote disease prevention and healthy living.</li>
+<li>Improve public health awareness and health literacy.</li>
+<li>Encourage early identification of health risks.</li>
+<li>Promote sports participation and physical fitness.</li>
+<li>Support positive health behaviour change.</li>
+<li>Empower healthier families and communities.</li>
+<li>Improve access to reliable digital health information.</li>
+</ul>
+
+<h3>Our Motto</h3>
+
+<p><strong>Work Smart, Not Harder!</strong></p>
+
+</div>
+</section>
+
+<!-- =================================
+     DEVELOPERS
+================================= -->
+
+<section class="developers" id="developers">
+
+<div class="container">
+
+<div class="section-heading">
+
+<h2>Meet the Development Team</h2>
+
+<p>
+HPS Tech Digital Innovation Team
+<br>
+Masinde Muliro University of Science and Technology
+</p>
+
+</div>
+
+<div class="developer-grid">
+
+<div class="developer-card">
+<div class="developer-icon">👨‍💻</div>
+<h3>Simon Mwangi</h3>
+<p>Team Coordinator</p>
+</div>
+
+<div class="developer-card">
+<div class="developer-icon">👨‍💻</div>
+<h3>Jeff Ochieng</h3>
+<p>Development Team</p>
+</div>
+
+<div class="developer-card">
+<div class="developer-icon">👨‍💻</div>
+<h3>Ephraim Kakala</h3>
+<p>Development Team</p>
+</div>
+
+<div class="developer-card">
+<div class="developer-icon">👨‍💻</div>
+<h3>Brian Mbadaya</h3>
+<p>Development Team</p>
+</div>
+
+<div class="developer-card">
+<div class="developer-icon">👩‍💻</div>
+<h3>Doris Achieng</h3>
+<p>Development Team</p>
+</div>
+
+</div>
+
+<p style="text-align:center;margin-top:20px;">
+<strong>HPS Tech – Building Digital Solutions for Healthier Communities.</strong>
+</p>
+
+<p style="text-align:center;font-size:13px;">
+Personal contact details should only be published
+after the respective team members have given consent.
+</p>
+
+</div>
+</section>
+
+<!-- =================================
+     CONTACT
+================================= -->
+
+<section class="contact" id="contact">
+
+<div class="container">
+
+<div class="section-heading">
+<h2>Contact AfyaNexa</h2>
+<p>Connect with our health promotion initiative.</p>
+</div>
+
+<div class="contact-box">
+
+<h3>HPS Tech Digital Innovation Team</h3>
+
+<p>
+Masinde Muliro University of Science and Technology
+(MMUST)
+</p>
+
+<p>
+Project: AfyaNexa
+</p>
+
+<p>
+Focus: Health Promotion, Disease Prevention,
+Public Health and Sports Science.
+</p>
+
+<p style="margin-top:15px;">
+<strong>Motto: Work Smart, Not Harder!</strong>
+</p>
+
+</div>
+</div>
+</section>
+
+<!-- =================================
+     DISCLAIMER
+================================= -->
+
+<div class="container">
+
+<div class="disclaimer">
+
+<h3>Health Information Disclaimer</h3>
+
+<p>
+AfyaNexa provides general health promotion and
+educational information. It does not replace
+professional medical advice, diagnosis or treatment.
+Always consult qualified healthcare professionals
+for personal medical concerns. For emergencies,
+seek immediate medical assistance.
+</p>
+
+<p>
+Clinical recommendations, vaccination schedules
+and emergency procedures should be checked against
+current guidance from the Kenya Ministry of Health,
+WHO, UNICEF and other recognised health authorities
+before publication.
+</p>
+
+</div>
+</div>
+
+<!-- =================================
+     FOOTER
+================================= -->
+
+<footer>
+
+<div class="container">
+
+<h2>AfyaNexa</h2>
+
+<p>Promoting Health, Preventing Diseases and
+Building Healthier Communities.</p>
+
+<p>Developed by HPS Tech Digital Innovation Team.</p>
+
+<p>MMUST | Health Promotion and Sports Science</p>
+
+<p><strong>Work Smart, Not Harder!</strong></p>
+
+<p>
+&copy; <span id="year"></span> AfyaNexa.
+All Rights Reserved.
+</p>
+
+<a href="#home">Back to Top ↑</a>
+
+</div>
+</footer>
+
+<!-- =================================
+     JAVASCRIPT
+================================= -->
+
+<script>
+
+/* =================================
+   1. HEALTH TOPIC INFORMATION
+================================= */
+
+const topics = {
+
+1: {
+title: "General Health Promotion and Healthy Living",
+what: "Health promotion involves helping people improve their health through healthy habits and informed decisions.",
+risk: "Poor hygiene, inactivity, unhealthy diets, tobacco use and harmful alcohol consumption increase health risks.",
+prevent: "Wash hands regularly, eat balanced meals, exercise, sleep adequately and attend appropriate health checks.",
+warning: "Persistent pain, unexplained weight loss, fever or unusual changes in your health require professional assessment.",
+action: "Adopt healthy routines and seek healthcare early when health concerns arise."
+},
+
+2: {
+title: "Primary Health Care and Community-Based Prevention",
+what: "Primary healthcare provides accessible essential health services close to where people live.",
+risk: "Delayed healthcare, missed screening and limited access to preventive services can increase health complications.",
+prevent: "Attend appropriate health checks, use immunization services and participate in community health activities.",
+warning: "Unusual symptoms or worsening health conditions should be assessed by a qualified health professional.",
+action: "Visit an appropriate health facility or community health service for guidance and referral."
+},
+
+3: {
+title: "Maternal, Newborn and Child Health",
+what: "Maternal and child health promotes the wellbeing of mothers, newborns and children before and after birth.",
+risk: "Poor nutrition, infections, inadequate antenatal care and delayed emergency care increase risks.",
+prevent: "Attend antenatal visits, follow professional advice, practise safe hygiene and support recommended breastfeeding.",
+warning: "Heavy bleeding, severe headache, convulsions, breathing difficulty and newborn feeding problems require urgent assessment.",
+action: "Seek antenatal, delivery and postnatal services from qualified healthcare professionals."
+},
+
+4: {
+title: "Immunization and Vaccination",
+what: "Vaccination helps the immune system develop protection against specific infectious diseases.",
+risk: "Missed doses and incomplete vaccination can leave people vulnerable to preventable infections.",
+prevent: "Follow the current Kenya Ministry of Health immunization schedule and keep vaccination records.",
+warning: "Difficulty breathing, facial swelling or collapse after vaccination may indicate a severe allergic reaction requiring emergency care.",
+action: "Visit a qualified vaccination provider for the correct schedule and advice about missed doses."
+},
+
+5: {
+title: "Communicable Diseases",
+what: "Communicable diseases are illnesses caused by infectious organisms that can spread between people or through other routes.",
+risk: "Unsafe water, poor sanitation, unprotected sexual activity, mosquito bites and close exposure to infections increase risks.",
+prevent: "Use mosquito nets, practise safe sex, wash hands, drink safe water and follow recommended vaccination guidance.",
+warning: "Persistent fever, difficulty breathing, severe diarrhoea or coughing blood require medical assessment.",
+action: "Seek testing and appropriate treatment. Follow professional infection-control advice."
+},
+
+6: {
+title: "Non-Communicable Diseases",
+what: "Non-communicable diseases include conditions such as diabetes, cancer and cardiovascular diseases.",
+risk: "Tobacco, harmful alcohol use, inactivity, unhealthy diets and certain inherited factors increase risks.",
+prevent: "Exercise regularly, eat healthily, avoid tobacco and attend recommended screening.",
+warning: "Chest pain, sudden weakness, severe breathing difficulty or signs of stroke require emergency assistance.",
+action: "Attend appropriate screening and follow prescribed medical care."
+},
+
+7: {
+title: "Nutrition and Healthy Eating",
+what: "Healthy nutrition provides the body with nutrients needed for growth, energy and disease prevention.",
+risk: "Poor dietary variety, excessive salt, unhealthy fats and inadequate food intake can harm health.",
+prevent: "Eat varied foods such as vegetables, fruits, beans, whole grains, eggs and other suitable protein sources.",
+warning: "Persistent weakness, unexplained weight changes and signs of malnutrition require assessment.",
+action: "Seek professional nutrition advice when dietary or nutritional concerns arise."
+},
+
+8: {
+title: "Environmental Health",
+what: "Environmental health focuses on environmental conditions that affect human health.",
+risk: "Contaminated water, poor waste disposal, pollution and unsafe sanitation increase disease risks.",
+prevent: "Use safe water, dispose of waste properly, maintain clean surroundings and control mosquito breeding sites.",
+warning: "Suspected waterborne disease outbreaks or widespread illness require prompt reporting to health authorities.",
+action: "Support community sanitation and seek safe water and environmental health services."
+},
+
+9: {
+title: "Mental Health and Psychosocial Wellbeing",
+what: "Mental health affects how people think, feel, cope with stress and interact with others.",
+risk: "Prolonged stress, social isolation, trauma and substance misuse may affect mental wellbeing.",
+prevent: "Maintain social connections, sleep adequately, exercise and develop healthy coping strategies.",
+warning: "Persistent hopelessness, severe distress or thoughts of suicide require prompt professional support. Immediate danger requires emergency assistance.",
+action: "Speak to a qualified mental health professional or trusted healthcare provider."
+},
+
+10: {
+title: "Sexual and Reproductive Health",
+what: "Sexual and reproductive health supports informed and responsible decisions throughout life.",
+risk: "Unprotected sex, limited access to information and missed screening increase health risks.",
+prevent: "Use appropriate contraception, practise safer sex and access recommended STI and HIV testing.",
+warning: "Unusual genital discharge, sores, severe pelvic pain or unusual bleeding require medical assessment.",
+action: "Visit a qualified reproductive health provider for confidential guidance and care."
+},
+
+11: {
+title: "Adolescent and School Health",
+what: "Adolescent health supports physical, emotional and social development among young people.",
+risk: "Substance misuse, poor nutrition, bullying, unsafe environments and inadequate health information may affect wellbeing.",
+prevent: "Maintain hygiene, eat balanced meals, exercise and seek reliable health information.",
+warning: "Severe emotional distress, injuries or persistent illness should be addressed promptly.",
+action: "Seek support from trusted adults, school health services or qualified professionals."
+},
+
+12: {
+title: "Community Health Promotion",
+what: "Community health promotion encourages individuals and groups to improve the health of their surroundings.",
+risk: "Poor sanitation, low health awareness and limited participation can increase community health challenges.",
+prevent: "Organise awareness campaigns, community clean-ups, screening outreach and health education.",
+warning: "Unusual clusters of illness should be reported promptly to local health authorities.",
+action: "Work with community health promoters and appropriate healthcare services."
+},
+
+13: {
+title: "Health Education and Communication",
+what: "Health communication provides understandable information that helps people make informed health decisions.",
+risk: "Misinformation and unclear messages can encourage unsafe health practices.",
+prevent: "Use trusted sources, verify health claims and communicate information in accessible language.",
+warning: "Dangerous health claims and false treatment advice should not be followed without professional verification.",
+action: "Consult recognised health authorities and qualified professionals."
+},
+
+14: {
+title: "Epidemiology and Disease Prevention",
+what: "Epidemiology studies how diseases occur and spread within populations.",
+risk: "Poor surveillance, delayed reporting and exposure to infectious sources can increase outbreak risks.",
+prevent: "Promote vaccination, surveillance, hygiene and timely disease reporting.",
+warning: "Unusual increases in similar illnesses should be reported to public health authorities.",
+action: "Follow official public health advice and cooperate with prevention measures."
+},
+
+15: {
+title: "Occupational Health and Safety",
+what: "Occupational health protects workers against workplace hazards and work-related illnesses.",
+risk: "Unsafe equipment, poor posture, chemical exposure and inadequate protective equipment increase risks.",
+prevent: "Use appropriate protective equipment, maintain safe workplaces and follow safety procedures.",
+warning: "Serious injuries, chemical exposure or breathing difficulties require immediate assessment.",
+action: "Report hazards and seek occupational health services."
+},
+
+16: {
+title: "Sports Science and Health Promotion",
+what: "Sports science applies scientific knowledge to physical activity, athletic performance and wellbeing.",
+risk: "Overtraining, poor hydration, inadequate recovery and unsafe equipment increase injury risks.",
+prevent: "Warm up, use suitable equipment, hydrate and allow adequate recovery.",
+warning: "Severe pain, collapse, head injury or breathing difficulty during sports require urgent assessment.",
+action: "Seek qualified medical or sports healthcare assistance when injured."
+},
+
+17: {
+title: "Physical Activity, Exercise and Fitness",
+what: "Physical activity includes movement that improves physical fitness and supports overall health.",
+risk: "Prolonged sitting and physical inactivity increase the risk of several chronic diseases.",
+prevent: "Walk, cycle, participate in sports and gradually build regular exercise routines.",
+warning: "Chest pain, fainting and severe breathing difficulty during exercise require urgent medical help.",
+action: "Choose activities appropriate to your fitness and health status."
+},
+
+18: {
+title: "First Aid and Safety Education",
+what: "First aid provides immediate assistance to someone who is injured or suddenly becomes ill.",
+risk: "Road accidents, falls, burns, choking and sports injuries are common emergencies.",
+prevent: "Learn first aid, maintain safe environments and follow injury prevention practices.",
+warning: "Unresponsiveness, severe bleeding, difficulty breathing and serious burns require emergency assistance.",
+action: "Call emergency services, provide safe first aid within your training and obtain professional medical care."
+},
+
+19: {
+title: "Health Systems and Healthcare Services",
+what: "Health systems organise healthcare services, professionals, facilities and resources to protect population health.",
+risk: "Delayed care, financial barriers and poor health awareness may limit access to services.",
+prevent: "Understand available health services, seek preventive care and learn about available health financing options.",
+warning: "Serious symptoms should never be ignored because of uncertainty about where to seek care.",
+action: "Visit an appropriate health facility and follow referral advice."
+},
+
+20: {
+title: "Research and Evidence-Based Prevention",
+what: "Evidence-based prevention uses reliable research and health information to guide health decisions.",
+risk: "Misinformation, unreliable research and unverified remedies can lead to harmful decisions.",
+prevent: "Use recognised sources such as WHO, UNICEF and the Kenya Ministry of Health.",
+warning: "Unverified treatment claims and misleading health statistics should be questioned.",
+action: "Check health recommendations against recognised professional and public health sources."
+}
+
+};
+
+/* =================================
+   2. DISPLAY HEALTH TOPICS
+================================= */
+
+function showTopic(number) {
+
+    const topic = topics[number];
+
+    if (!topic) return;
+
+    document.getElementById("detailTitle").textContent =
+        topic.title;
+
+    document.getElementById("detailContent").innerHTML = `
+    
+        <h3>What is it?</h3>
+        <p>${topic.what}</p>
+
+        <h3>Risk Factors</h3>
+        <p>${topic.risk}</p>
+
+        <h3>Prevention Measures</h3>
+        <p>${topic.prevent}</p>
+
+        <h3>Warning Signs</h3>
+        <p>${topic.warning}</p>
+
+        <h3>What Should You Do?</h3>
+        <p>${topic.action}</p>
+
+    `;
+
+    const details = document.getElementById("topicDetails");
+
+    details.style.display = "block";
+
+    details.scrollIntoView({
+        behavior: "smooth",
+        block: "start"
+    });
+
+}
+
+/* =================================
+   3. CLOSE TOPIC
+================================= */
+
+function closeTopic() {
+
+    document.getElementById("topicDetails").style.display = "none";
+
+}
+
+/* =================================
+   4. SEARCH FUNCTION
+================================= */
+
+function searchTopics() {
+
+    const input = document.getElementById("searchInput")
+        .value.toLowerCase();
+
+    const cards = document.querySelectorAll(".topic-card");
+
+    cards.forEach(card => {
+
+        const content = card.textContent.toLowerCase();
+
+        if (content.includes(input)) {
+
+            card.style.display = "block";
+
+        } else {
+
+            card.style.display = "none";
+
+        }
+
+    });
+
+}
+
+/* =================================
+   5. LANGUAGE SWITCH
+================================= */
+
+let kiswahili = false;
+
+function toggleLanguage() {
+
+    kiswahili = !kiswahili;
+
+    if (kiswahili) {
+
+        document.querySelector(".language-btn").textContent = "English";
+
+        document.querySelector(".hero h2").textContent =
+            "Kukuza Afya, Kuzuia Magonjwa";
+
+        document.querySelector(".hero h1").innerHTML =
+            'Karibu <span>AfyaNexa</span>';
+
+        document.querySelector(".hero p").textContent =
+            "Jifunze kuhusu afya, kinga dhidi ya magonjwa, mazoezi na maisha yenye afya kwa watu binafsi na jamii.";
+
+        document.querySelector(".intro h2").textContent =
+            "Afya Bora Inaanza Nawe";
+
+        document.querySelector("#topics .section-heading h2").textContent =
+            "Kituo cha Taarifa za Afya";
+
+        document.querySelector("#topics .section-heading p").textContent =
+            "Gundua maeneo 20 muhimu ya kukuza afya na kuzuia magonjwa.";
+
+        document.getElementById("searchInput").placeholder =
+            "Tafuta mada za afya...";
+
+        document.querySelector("#firstaid .section-heading h2").textContent =
+            "Huduma ya Kwanza na Uelewa wa Dharura";
+
+    } else {
+
+        location.reload();
+
+    }
+
+}
+
+/* =================================
+   6. AUTOMATIC COPYRIGHT YEAR
+================================= */
+
+document.getElementById("year").textContent =
+    new Date().getFullYear();
+
+</script>
+
+</body>
+</html>
